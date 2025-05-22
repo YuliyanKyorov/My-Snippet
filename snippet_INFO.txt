@@ -52,68 +52,78 @@ foreach (int number in numbers)
 16. fl - Филтриране на списък с LINQ
 var evenNumbers = numbers.Where(n => n % 2 == 0).ToList();
 
-17. ig - Групиране на елементи по критерий
+17. forcw - For цикъл за обхождане и отпечатване на двумерен масив
+for (int row = 0; row < numbers.GetLength(0); row++)        // редове
+{
+    for (int col = 0; col < numbers.GetLength(1); col++)    // колони
+    {
+        Console.Write(numbers[row, col] + " ");
+    }
+    Console.WriteLine(); // нов ред след всяка редица   
+}
+
+18. ig - Групиране на елементи по критерий
 var groupedByRemainder = numbers.GroupBy(n => n % 3);
 
-18. ipr - int name = int.Parse(Console.ReadLine());  // нов int чакащ вход от потребителя
+19. ipr - int name = int.Parse(Console.ReadLine());  // нов int чакащ вход от потребителя
 
-19. lax - Използване на ламбда изрази
+20. lax - Използване на ламбда изрази
 Func<int, int> square = x => x * x;
 int result = square(5)
 
-20. ll - Обединяване на два списъка
+21. ll - Обединяване на два списъка
 List<int> moreNumbers = new List<int>() { 7, 8, 9 };
 var combinedList = numbers.Concat(moreNumbers).ToList();
 
-21. lx - Празна списък от тип T променлива
+22. lx - Празна списък от тип T променлива
 List<T>
 
-22. nc - Нов празен клас
+23. nc - Нов празен клас
 class ClassName
 {
 
 }
 
-23. nl - Инициализация на списък
+24. nl - Инициализация на списък
 List<int> numbers = new List<int>() { 1, 2, 3, 4, 5 };
 
-24. no - Създаване на нов обект
+25. no - Създаване на нов обект
 MyClass myObject = new MyClass();
 
-25. rl - Обръщане на реда на елементите в списък
+26. rl - Обръщане на реда на елементите в списък
 numbers.Reverse();
 
-26. rmi - Премахване на елемент от списък
+27. rmi - Премахване на елемент от списък
 numbers.Remove(0);
 
-27. sl - Сортиране на списък
+28. sl - Сортиране на списък
 numbers.Sort();
 
-28. ssa - int[] numbers = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();//Чете входа като низ (string).
+29. ssa - int[] numbers = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();//Чете входа като низ (string).
 .Split(", ") – Разделя низа на части, използвайки ", " (запетая и интервал) като разделител.
 .Select(int.Parse) – Преобразува всеки елемент от масива (който е string) в цяло число (int).
 .ToArray() – Преобразува резултата обратно в масив от цели числа (int[]).
 
-29. ssl - List<int> numbers = Console.ReadLine() .Split(", ") .Select(int.Parse) .ToList();//Чете входа като низ (string).
+30. ssl - List<int> numbers = Console.ReadLine() .Split(", ") .Select(int.Parse) .ToList();//Чете входа като низ (string).
 .Split(", ") – Разделя прочетения низ на поднизове, използвайки ", " (запетая и интервал) като разделител.
 .Select(int.Parse) – Преобразува всеки подниз в цяло число (int).
 .ToList() – Преобразува резултата в списък от цели числа (List<int>)
 
-30. str - string name = Console.ReadLine();  //  нов стринг чакащ вход от usera
+31. str - string name = Console.ReadLine();  //  нов стринг чакащ вход от usera
 
-31. sysyp - namespace ConsoleApp1 {internal class Program {}} Program класът е празен и няма Main мето.
+32. sysyp - namespace ConsoleApp1 {internal class Program {}} Program класът е празен и няма Main мето.
 
-32. sysypm - namespace ConsoleApp1 { internal class Program { static void Main(string[] args) { }}//namespace ConsoleApp1
+33. sysypm - namespace ConsoleApp1 { internal class Program { static void Main(string[] args) { }}//namespace ConsoleApp1
 Дефинира пространство от имена (namespace), което групира класове и други типове. ConsoleApp1 е името на пространството, което обикновено съвпада с името на проекта.internal class Program Дефинира клас с име Program.Модификаторът internal означава, че този клас е достъпен само в рамките на същия проект. static void Main(string[] args) Това е главният метод (Main), който се изпълнява първи при стартиране на програмата.
 string[] args – Това е масив от аргументи, които могат да се подават от командния ред.void – Методът няма връщана стойност. Тяло на метода { }
 
-33. ua - Използване на using за автоматично освобождаване на ресурси
+34. ua - Използване на using за автоматично освобождаване на ресурси
 using (StreamWriter writer = new StreamWriter("example.txt"))
 {
     writer.WriteLine("This is an example.");
 }
 
-34. uty - Използване на try-catch блокове за обработка на изключения
+35. uty - Използване на try-catch блокове за обработка на изключения
 try
 {
     // Код, който може да хвърли изключение
@@ -127,25 +137,15 @@ finally
     // Код, който винаги се изпълнява независимо от изключението
 }
 
-35. va - Празен масив от var променлива 
+36. va - Празен масив от var променлива 
 var items = new T [0];
 
-36. vax - Декларация и инициализация на масив с T променлива 
+37. vax - Декларация и инициализация на масив с T променлива 
 var items = new T [] { null };
 
 
-37. vn - Празен на списък стек или опашка с var променлива
+38. vn - Празен на списък стек или опашка с var променлива
 var items = new List/Stack/Queue<T>( );
 
-38. vnx - Декларация и инициализация на списък стек или опашка с var променлива
+39. vnx - Декларация и инициализация на списък стек или опашка с var променлива
 var items = new List/Stack/Queue<T>() { null };
-
-
-
-
-
-
-
-
-
-
