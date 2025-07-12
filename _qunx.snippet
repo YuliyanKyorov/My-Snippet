@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>_qunx</Title>
+      <Shortcut>qunx</Shortcut>
+      <Description>Declaration and initialization of a Queue.</Description>
+      <Author>Tauori</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Queue<T> myQueue = new Queue<T>();
+myQueue.Enqueue(T item)//Добавя елемент в края на опашката.
+myQueue.Contains(T item)//Проверява дали даден елемент се намира в опашката.
+
+Console.WriteLine(myQueue.Dequeue()); // Премахва и връща първия елемент.
+Console.WriteLine(myQueue.Peek());    // Връща първия елемент, без да го премахва.
+Console.WriteLine(myQueue.Count()); // Връща броя на елементите в опашката.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

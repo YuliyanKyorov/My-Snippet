@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>_uty</Title>
+      <Shortcut>uty</Shortcut>
+      <Description>Using try-catch blocks to handle exceptions try</Description>
+      <Author>Tauori</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[try
+{
+    // Код, който може да хвърли изключение
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Възникна грешка: {ex.Message}");
+}
+finally
+{
+    // Код, който винаги се изпълнява независимо от изключението
+}
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

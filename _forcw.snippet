@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>_forcw</Title>
+      <Shortcut>forcw</Shortcut>
+      <Description>Traversing a list with a for loop</Description>
+      <Author>Tauori</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+  <Code Language="csharp"><![CDATA[for (int row = 0; row < numbers.GetLength(0); row++)
+        {
+            for (int col = 0; col < numbers.GetLength(1); col++)
+            {
+                Console.Write(numbers[row, col] + " ");
+            }
+                Console.WriteLine(); 
+        }
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

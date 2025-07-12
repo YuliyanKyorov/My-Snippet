@@ -1,0 +1,74 @@
+ca, - Създава двумерен масив
+T [,] myArray = new T [n , n ]; 
+
+va, - Декларация на двумерен масив от тип var
+var myArray = new T [n , n ]; 
+
+vax, - Създава двумерен масив с 2 реда и 3 колони 
+ T [,] myArray = {
+ {x, y, z},
+ {x, y, z }
+};  
+
+forcw, - обхожда двумерен масив
+for (T row = 0; row < myArray.GetLength(0); row ++)
+{
+   for (T col = 0; col < myArray.GetLength(1); col ++)
+   {
+       Console.Write( myArray [row, col]);
+       Console.Write(" ");
+   }
+}
+
+act - Създай делегат Аction
+Action<T> // no value - void function
+
+fun - Създай делегат Func
+Func<T, TResult> // (T) and a return value (TResult)
+
+pre - Създай делегат Predicate
+Predicate<T> //(T) and returns bool.
+
+qux - Създай онашка - generic
+Queue<T> 
+
+qun - Нова опашка
+Queue<T> myQueue = new Queue<T>();
+
+qunx - Декларация и инициализация на опашка.
+Queue<T> myQueue = new Queue<T>();
+myQueue.Enqueue(T item)//Добавя елемент в края на опашката.
+myQueue.Contains(T item)//Проверява дали даден елемент се намира в опашката.
+
+Console.WriteLine(myQueue.Dequeue()); // Премахва и връща първия елемент.
+Console.WriteLine(myQueue.Peek());    // Връща първия елемент, без да го премахва.
+Console.WriteLine(myQueue.Count()); // Връща броя на елементите в опашката.
+
+stx - Създай стек - generic
+Stack<T> 
+
+stn - Нова стек
+Stack<Т> myStack = new Stack<T>();
+
+stnx - Декларация и инициализация на стек.
+Stack<Т> myStack = new Stack<Т>();
+myStack.Push(T item);//Добавя елемент в стека.
+myStack.Contains(T item)// Проверява дали стекът съдържа даден елемент.
+
+Console.WriteLine(myStack.Pop());//Премахва и връща последния добавен елемент.
+Console.WriteLine(myStack.Peek());//Връща последния елемент, без да го премахва.
+Console.WriteLine(myStack.Count());//Връща броя на елементите в стека.
+
+hsx - Създай хаш сет - generic
+HashSet<T>
+
+hsn - Нов хаш сет
+HashSet<T> myHashSet = new HashSet<T>();
+
+hsnx - Декларация и инициализация хаш сет
+HashSet<T> myHashSet = new HashSet<T> { 1, 2, 3, 4 };
+
+
+
+
+

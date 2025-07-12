@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>_stnx</Title>
+      <Shortcut>stnx</Shortcut>
+      <Description>Stack declaration and initialization.</Description>
+      <Author>Tauori</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Stack<Т> myStack = new Stack<Т>();
+myStack.Push(T item);//Добавя елемент в стека.
+myStack.Contains(T item)// Проверява дали стекът съдържа даден елемент.
+
+Console.WriteLine(myStack.Pop());//Премахва и връща последния добавен елемент.
+Console.WriteLine(myStack.Peek());//Връща последния елемент, без да го премахва.
+Console.WriteLine(myStack.Count());//Връща броя на елементите в стека.$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

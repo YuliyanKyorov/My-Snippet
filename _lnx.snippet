@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>_lnx</Title>
+      <Shortcut>lnx</Shortcut>
+      <Description>List and variable declaration (with initializer)</Description>
+      <Author>Tauori</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[List<T> myList = new List<T>();
+             myList.Add(item);
+             myList.Remove(item);
+             myList.RemoveAt(index);
+             myList.Insert(index, item);
+             myList.Clear();
+             myList.Contains(item);
+             var item = myList[0];
+
+            foreach (var list in myList)
+          {
+           Console.WriteLine(list);
+}$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
